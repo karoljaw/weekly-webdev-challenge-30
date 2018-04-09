@@ -1,0 +1,23 @@
+//COLORS
+$colorCararra: #efeee9;
+$colorMineShalf: #222222;
+$colorMineShalfLighten8: lighten($colorMineShalf, 8%);
+$colorMineShalfLighten18: lighten($colorMineShalf, 18%);
+$colorMineShalfLighten25: lighten($colorMineShalf, 25%);
+$colorViolentViolet: #290A59;
+$colorDodgerBlue: #4E4AFF;
+
+//FONTS
+$font-main: 'Roboto', sans-serif;
+$font-minor: 'Lato', sans-serif;
+
+// SIZES
+$size-1: 3rem;
+$size-2: 2.25rem;
+$size-3: 1.75rem;
+$size-4: 1.125rem;
+$size-5: 1rem;
+$size-6: 0.8rem;
+
+//TRANSITION
+$transition-time-hover: 0.3s;
