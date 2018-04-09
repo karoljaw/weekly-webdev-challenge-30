@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222222; }
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 0 15% 10vh 15%;
+  background-image: url("../assets/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .header_heading {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #505050;
+    width: 90%; }
+  @media only screen and (min-width: 1024px) {
+    .header {
+      padding-top: 180px; }
+      .header_heading {
+        width: 50%; } }
+
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #efeee9; }
+  .root_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 40; }
+  .root_header {
+    width: 100%;
+    min-height: 100vh; }
+  .root_main {
+    width: 100%; }
+  .root_footer {
+    width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .root_nav {
+      padding: 1em 0;
+      height: 180px; }
+    .root_nav.-sticky {
+      height: 3em; } }
+
+.menu {
+  background-color: #efeee9;
+  display: none; }
+  .menu.-toggle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 0;
+    animation: fade-in;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards; }
+  .menu_item {
+    font-size: 0.8em;
+    margin: 1.5em 2em; }
+  .menu_item.-logo {
+    font-size: 1.5em; }
+  .menu_link {
+    text-decoration: none;
+    letter-spacing: 0.5em;
+    color: #222222;
+    transition: 0.3s; }
+  .menu_link:hover, .menu_link:focus {
+    color: #505050; }
+  @media only screen and (min-width: 1024px) {
+    .menu {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background-color: transparent; }
+      .menu.-toggle {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center; }
+      .menu_item {
+        font-size: 0.6em;
+        margin: 0 2em; } }
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s; }
+  .nav_trigger {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 60;
+    width: 25px;
+    height: 25px; }
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .nav.-sticky {
+      transition: 0.5s;
+      background-color: rgba(255, 255, 255, 0.95); }
+    .nav_menu {
+      position: static;
+      height: auto; }
+    .nav_trigger {
+      display: none; } }
+
+.trigger {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0; }
+  .trigger_line {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.6);
+    left: 0;
+    transition: 0.3s; }
+  .trigger_line.-first {
+    top: 0; }
+  .trigger_line.-second {
+    top: 40%; }
+  .trigger_line.-third {
+    top: 80%; }
+  .trigger.-active .trigger_line.-first {
+    top: 40%;
+    transform: rotate(45deg) scaleX(1.4); }
+  .trigger.-active .trigger_line.-second {
+    top: 40%;
+    opacity: 0; }
+  .trigger.-active .trigger_line.-third {
+    top: 40%;
+    transform: rotate(-45deg) scaleX(1.4); }
+  .trigger:hover, .trigger:focus {
+    outline: none; }
+
+._text-caps {
+  text-transform: uppercase; }
+
+._text-bold {
+  font-weight: 700; }
+
+._text-right {
+  text-align: right; }
+
+._text-center {
+  text-align: center; }
+
+._list-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: orange; }

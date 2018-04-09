@@ -1,14 +1,22 @@
 {
-  "name": "weekly-webdev-challenge-30",
+  "name": "wekly-webdev-challenge-30",
   "version": "1.0.0",
-  "description": "starter",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "watch": "node-sass src/scss/style.scss src/css/style.css -w"
   },
-  "author": "Karol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karoljaw/weekly-webdev-challenge-30.git"
+  },
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.5.3"
+  "bugs": {
+    "url": "https://github.com/karoljaw/weekly-webdev-challenge-30/issues"
+  },
+  "homepage": "https://github.com/karoljaw/weekly-webdev-challenge-30#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
   }
 }

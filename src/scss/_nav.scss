@@ -1,0 +1,36 @@
+.nav {
+    @include flex(row,nowrap,center,center,center);
+    background-color: rgba(white,0.5);
+    transition: 0.3s;
+
+    &_trigger {
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        z-index: 60;
+        width: 25px;
+        height: 25px;
+    }
+    &_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        height: 100vh;
+        width: 100%;
+    }
+
+    @include screen(desktop) {
+        &.-sticky{
+            transition: 0.5s;
+            background-color: rgba(white,0.95);
+        }
+        &_menu {
+            position: static;
+            height: auto;
+        }
+        &_trigger {
+            display: none;
+        }
+    }
+}
