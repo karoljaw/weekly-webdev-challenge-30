@@ -1,15 +1,22 @@
 @import 'mixin';
 @import 'veriables';
 @import 'global';
-@import 'header';
+@import 'animation';
 @import 'root';
-@import 'menu';
-@import 'nav';
-@import 'trigger';
+
+@import 'component/header';
+@import 'component/menu';
+@import 'component/nav';
+@import 'component/trigger';
+@import 'component/about';
+@import 'component/article';
+@import 'component/portfolio';
+@import 'component/gallery';
+@import 'component/contact';
+@import 'component/social';
+@import 'component/footer';
+
 @import 'utility/text';
 @import 'utility/list';
-
-
-body {
-    background-color: orange;
-}
+@import 'utility/state';
+@import 'utility/button'

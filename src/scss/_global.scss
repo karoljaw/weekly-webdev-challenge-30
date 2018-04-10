@@ -12,9 +12,21 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 80%;
+}
+
+@include screen(tablet) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+@include screen(desktop) {
+    html {
+        font-size: 1.2rem;
+    }
 }
 body {
-    font-family: $font-main;
+    font-family: 'Roboto', sans-serif;
     color: $colorMineShalf;
 }

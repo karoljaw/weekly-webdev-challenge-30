@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/karoljaw/weekly-webdev-challenge-30#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "node-sass": "^4.8.3"
   }
 }
